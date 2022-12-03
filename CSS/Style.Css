@@ -1,0 +1,428 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* -----------HEADER AND NAVBAR--------- */
+/* -----Header class------ */
+.Header{
+    padding: 10px 50px;
+    background-color: #EEAD2D;
+
+}
+#Navbar-1{
+display: flex;
+align-items: center;
+JUSTIFY-CONTENT: space-between;
+
+}
+
+/* logo Design  */
+#logo{
+    width: 20%;
+}
+#logo img {
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 50px;
+    filter: invert(100%);
+
+    
+}
+
+/* Nav Manu Design  */
+#Nav-page{
+    width: 80%;
+    display: block;
+    align-items: flex-end;
+    flex-direction: row;
+    
+}
+#Nav-page .fa{
+    display: none;
+}
+#Nav-page ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    /* text-decoration: none; */
+}
+#Nav-page ul li a{
+    
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    /* font-weight: 500; */
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#Nav-page ul li a:hover{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: black;
+
+}
+/* -----------front section-------- */
+#front{
+    height: 100vh;
+    background: url(/image/University.jpg) center center/cover;
+    margin-top: 0px;
+    background-color: black;
+    opacity: 7.9;
+}
+.front-section-1{
+    /* background-color: rgba(34, 210, 60, 0.305); */
+    background: linear-gradient(90deg, rgba(235,162,36,1) 0%, rgba(242,152,49,0.36738445378151263) 100%);
+   padding: 0px 200px;
+
+}
+#front div {
+    /* padding: 300px 200px; */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ------------Utility----------------- */
+.H-seconery{
+    font-size: 50px;
+    line-height: 80px;
+    /* font-weight: bold; */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.H-primary{
+    font-size:18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button designing in Css */
+.hero-btn{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    background: transparent;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    color: black;
+}
+
+
+#click{
+    display: none;
+}
+.menu-btn i{
+    display: none;
+}
+#click:checked ~ .menu-btn i::before{
+    content: " \f00d";
+    /* display: none; */
+}
+
+/* ------------------Course Section ------------------------------ */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    /* border: 1px solid red; */
+}
+.course h1{
+    font-size: 36px;
+}
+.course p{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    /* grid-auto-rows:minmax(1fr, auto) ; */
+    /* grid-auto-columns: minmax(1fr, auto); */
+    grid-gap: 20px;
+    
+}
+.course-col{
+    border: 1px solid rgb(237, 234, 234);
+    padding: 15px 15px;
+    background: rgb(237, 234, 234);
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.course-col:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0, 0 , 0, .2);
+}
+
+
+/* ------------------ Campus Section ------------------------------ */
+.campus{
+    width: 80%;
+    margin: auto ;
+    text-align: center;
+    padding-top: 30px;
+    /* overflow: hidden; */
+}
+
+.campus-col img{
+    width: 100%;
+    border: 1px;
+    border-radius: 5px; 
+    cursor: pointer;
+    
+}
+.campus-col img:hover{
+    box-shadow: 5px 5px 20px 5px rgba(0, 0 , 0, .5);
+}
+/* .layer{
+    background: rgba(226, 0 , 0, .7);
+    width: 100%;
+    border: 1px;
+    border-radius: 5px; 
+    position: relative;
+    /* height: 100px; */
+    /* top: 0; */
+    /* left: 0; *
+} */
+
+
+/* --------------------------facilities---------------------------- */
+
+.facilites{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+/* .facilites-col{
+    border: 1px solid gray;
+    background-color: rgb(205, 203, 203);
+    border-radius: 5px;
+    
+} */
+.row .facilites-col img{
+    width: 100%;
+    border: 1px;
+    border-radius: 15px; 
+    display: cover;
+    cursor: pointer;
+}
+
+.facilites-col{
+    text-align: left;
+}
+.facilites-col h3{
+    padding-top: 30px ;
+}
+.facilites-col p{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 7px 0px;
+}
+/* ------------------- Testimonails ------------------------------- */
+.testimonails{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.testimonials-col{
+    text-align: left;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    cursor: pointer;
+    /* margin: 5%; */
+    width: 100%;
+    display: flex;
+    padding: 10px;
+
+}
+.image-col img{
+    border-radius:50px;
+    height: 60px;
+    margin: 20px 20px 0px 5px;
+    cursor: pointer;
+    
+}
+.text-col{
+    font-size: 13px;
+}
+
+.text-col i{
+    color:#EEAD2D ;
+}
+.testimonials-col:hover{
+    box-shadow: 5px 5px 20px 5px rgba(0, 0 , 0, .5);
+}
+
+
+/* -----------------------------CALL TO ACTIION -------------------------- */
+
+.cta{
+    margin:100px auto;
+    width: 80%;
+    background-image:linear-gradient(90deg, rgba(235,162,36,1) 0%, rgba(242,152,49,0.36738445378151263) 100%), url(/Image/banner.jpg);
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+    padding: 100px 0px;
+    border-radius: 10px;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+/* -----------------------------------Footer ---------------------------------- */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 80px;
+    /* padding-bottom: 100px; */
+    background-color: #eeae2ddc;
+    
+}
+.footer h4{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 40px;
+
+}
+.icon i{
+  
+    font-size: 40px;
+    color: #f44336;
+    margin: 0px 13px;
+    cursor: pointer;
+    padding: 18px 0px;
+}
+.footer .fa-heart{
+    color: #f44336;
+}
+
+
+.footer .last{
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgb(127, 127, 127);
+}
+.footer .last-1{
+    padding: 20px;
+}
+.footer .last-3{
+    padding: 5px;
+}
+/* ---------------@media Qurey For Responsiv WEbsite------------ */
+@media ( max-width: 900px) {
+    .front-section-1{
+        padding: 50px 25px;
+    }
+    /* * --------uttily Responsive--------- */ 
+    .H-seconery{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .H-primary{
+        font-size: 15px;
+    }
+}
+@media ( max-width: 700px) {
+   /* ----firtst section------- */
+    .front-section-1{
+        padding: 50px 30px;
+    }
+    
+    #front div {
+        height: 100vh;
+    }
+
+    /* -------Navbar Design -------- */
+    #Nav-page ul li {
+        display: block;
+        margin: 15px;
+    }
+    #Nav-page{
+        position: absolute;
+        background:#f1ae28e9;
+        height: 100vh;
+        width: 200px;
+        top: 97px;
+        right: 0px;
+        text-align: center;
+    }
+    /* #Nav-page{
+        display: none;
+    } */
+    .hero-btn{
+        position: static;
+    }
+    #Nav-page ul{
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+    
+    #Nav-page ul li a:hover{
+        background-color: rgba(255, 255, 255, 0);
+        border: 1px solid rgba(255, 255, 255, 0);
+        color: #000;
+    }
+    /* -------Close and Menu bar design ------- */
+    .menu-btn i{
+        font-size: 30px;
+        color:white ;
+        display: block;
+        cursor: pointer;
+    }
+    #click:checked ~ #Nav-page{
+        display: none;
+    }
+
+/* ------------------------------@media Qurey at max-width: 700px;------------------------ */
+@media ( max-width: 700px) {
+    .row{
+        grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    }
+    .cta h1{
+        font-size: 15px;
+    }
+    
+    #logo img {
+        width: 50px;
+    }
+    #Nav-page{
+        top: 77px;
+    }
+}
+
+
+    /* --------uttily Responsive--------- */
+    .H-seconery{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .H-primary{
+        font-size: 10px;
+    }
+}
